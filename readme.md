@@ -1,5 +1,5 @@
-# Uppy-Vuex [alpha]
-[![npm version](https://badge.fury.io/js/uppy-vuex.svg)](https://badge.fury.io/js/uppy-vuex)
+# Uppy-Vuex [alpha] 
+[![npm version](https://badge.fury.io/js/uppy-vuex.svg)](https://badge.fury.io/js/uppy-vuex) [![mit license](https://img.shields.io/badge/license-MIT-blue.svg)](https://img.shields.io/badge/license-MIT-blue.svg)
 
 A lightweight Vuex wrapper around the [Uppy](https://uppy.io/) file upload library.
 
@@ -136,3 +136,7 @@ Issues can be filed against this repo.
 ## Contributing
 
 The current maintainer is [AnalyzePlatypus](https://github.com/AnalyzePlatypus).
+
+## License
+
+This project is open-source under the [MIT license](https://opensource.org/licenses/MIT).
