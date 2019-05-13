@@ -37,14 +37,11 @@ store.dispatch("uppy/init");
 `Uppy-Vuex` exposes the complete [Uppy Core API](https://uppy.io/docs/uppy/).
 All methods are available by dispatching `uppy/<uppy method>`, or by calling the `uppy/<getter>` getters.
 
-> Caution: Some method signatures are slightly different, so read carefully! 
-> (The changed methods are marked with ❗️)
-
 > Note: `Uppy-Vuex` is a [namespaced module](https://vuex.vuejs.org/guide/modules.html#namespacing). This means that all getters and actions must be prefaced with `uppy/`
 
 ### Getters
 
-|Usage|Effect|Doc link|
+|Usage|Effect|Notes|Doc link|
 |---|---|---|---|
 |`getters["uppy/isReady"]`| Has the underlying Uppy instance been initialized yet? (If `false`, dispatch `uppy/init`)| None (`Uppy-Vuex` only)|
 |`getters["uppy/getUppyInstance"]` | Access the underlying Uppy instance | None (`Uppy-Vuex` only)|
@@ -78,10 +75,10 @@ All methods are available by dispatching `uppy/<uppy method>`, or by calling the
 |`dispatch("uppy/resumeAll")`| Resumes all uploads. |[🔗 Docs](https://uppy.io/docs/uppy/#uppy-resumeAll)|
   
 #### Retry
-|Usage|Effect|Notes|Doc link|
-|---|---|---|---|
-|`dispatch("uppy/retryUpload", fileID)`| Retry an upload (after an error, for example). | |[🔗 Docs](https://uppy.io/docs/uppy/#uppy-retryUpload-fileID)|
-|`dispatch("uppy/retryAll")`| Retry all uploads (after an error, for example). | |[🔗 Docs](https://uppy.io/docs/uppy/#uppy-retryAll)| 
+|Usage|Effect|Doc link|
+|---|---|---|
+|`dispatch("uppy/retryUpload", fileID)`| Retry an upload (after an error, for example). |[🔗 Docs](https://uppy.io/docs/uppy/#uppy-retryUpload-fileID)|
+|`dispatch("uppy/retryAll")`| Retry all uploads (after an error, for example).| [🔗 Docs](https://uppy.io/docs/uppy/#uppy-retryAll)| 
 
 #### Cancellation and Teardown
 
@@ -93,6 +90,7 @@ All methods are available by dispatching `uppy/<uppy method>`, or by calling the
 
 #### Advanced
 > ❗️Some of these actions have modified method signatures. 
+
 |Usage|Effect|Notes|Doc link|
 |---|---|---|---|
 |`dispatch("uppy/setFileMeta", {fileID, data})`| Update metadata for a specific file. | |[🔗 Docs](https://uppy.io/docs/uppy/#uppy-setFileMeta-fileID-data)| 
