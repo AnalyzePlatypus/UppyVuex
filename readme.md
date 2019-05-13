@@ -1,4 +1,5 @@
 # Uppy-Vuex [alpha]
+[![npm version](https://badge.fury.io/js/uppy-vuex.svg)](https://badge.fury.io/js/uppy-vuex)
 
 A lightweight Vuex wrapper around the [Uppy](https://uppy.io/) file upload library.
 
@@ -41,8 +42,8 @@ All methods are available by dispatching `uppy/<uppy method>`, or by calling the
 
 ### Getters
 
-|Usage|Effect|Notes|Doc link|
-|---|---|---|---|
+|Usage|Effect|Doc link|
+|---|---|---|
 |`getters["uppy/isReady"]`| Has the underlying Uppy instance been initialized yet? (If `false`, dispatch `uppy/init`)| None (`Uppy-Vuex` only)|
 |`getters["uppy/getUppyInstance"]` | Access the underlying Uppy instance | None (`Uppy-Vuex` only)|
 |`getters["uppy/getFile"](fileID)`| Get a specific file object by its ID. | [🔗 Docs](https://uppy.io/docs/uppy/#uppy-getFile-fileID)|
